@@ -1,0 +1,27 @@
+# Site settings
+title: McKinnon Lab
+email: uqsatlur@uq.edu.au # IMPORTANT: Replace with the lab's official email
+description: "Official website for the McKinnon Lab, focusing on endometriosis research, organoids, CRISPR, and multi-omics."
+baseurl: "" # IMPORTANT: Keep this empty for organization pages like mckinnon-lab.github.io
+url: "https://mckinnon-lab.github.io" # IMPORTANT: The base hostname & protocol for your site
+github_username: McKinnon-Lab # Your GitHub Organization username
+
+# Header navigation links
+header_pages:
+  - index.md
+  - research.md
+  - publications.md
+  - team.md
+  - contact.md
+
+# Build settings
+markdown: kramdown
+theme: minima # Using the default minima theme for now. This will provide basic styling.
+
+# Exclude files from processing by Jekyll
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - index.md # We'll eventually replace this with index.md, so exclude the original
+  - node_modules
+  - vendor

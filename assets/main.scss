@@ -1,0 +1,30 @@
+---
+# This ensures Jekyll processes this file as a SASS file
+---
+
+// Import Minima's default styles
+@import "minima";
+
+// Custom styles for McKinnon Lab
+// Inject the logo into the site-title element
+.site-title {
+  padding-left: 60px !important; // Adjust spacing for the logo
+  background-image: url("{{ "/assets/images/mckinnon_lab_logo.png" | relative_url }}");
+  background-repeat: no-repeat;
+  background-size: 50px auto; // Control logo size
+  background-position: left center; // Position the logo
+  display: inline-block; // Ensure it behaves well with padding
+}
+
+// Optional: Adjust font size for the title next to the logo
+.site-title {
+  font-size: 2.25rem; // Default size, adjust if needed
+}
+
+// Media query for smaller screens: remove logo
+@media screen and (max-width: 600px) {
+  .site-title {
+    padding-left: 0 !important;
+    background-image: none !important; // Hide logo on small screens
+  }
+}
